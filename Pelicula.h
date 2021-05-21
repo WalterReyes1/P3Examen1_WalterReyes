@@ -1,6 +1,9 @@
 #ifndef PELICULA_H
 #define PELICULA_H
-
+#include <stdlib.h>
+#include <time.h>
+#include <string>
+using namespace std;
 class Pelicula {
 	private:
 		string titulo;
@@ -10,18 +13,19 @@ class Pelicula {
 
 	public:
 		Pelicula();
-		Pelicula(string titulo; string director,string genero int valoracion);
+		Pelicula(string titulo, string director,string genero ,int valoracion);
 		
 		string getTitulo();
 		void setTitulo(string);
 		
-		string getDirector():
+		string getDirector();
 		void setDirector(string);
 		
 		string getGenero();
-		void setGenero();
+		void setGenero(string);
 		
-		int getValoriacion();
+		int getValoracion();
+		string toString();
 };
 
 #endif
