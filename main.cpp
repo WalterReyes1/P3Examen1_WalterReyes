@@ -75,7 +75,7 @@ int main(int argc, char** argv) {
 					cout<<"Cual pelicula desesa eliminar?: "<<endl;
 					cin>>opcion;
 				} while(opcion < 0 || opcion>h->getListaPeliculas().size());
-
+				h->EliminarPelicula(opcion);
 				break;
 			}//fin case 3
 			case 4: {
@@ -94,7 +94,7 @@ int main(int argc, char** argv) {
 				break;
 			}//fin case 6
 			case 7 : {
-
+					cout<<h->toString()<<endl;
 				break;
 			}//fin case 7
 			case 8: {
